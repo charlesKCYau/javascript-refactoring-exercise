@@ -1,7 +1,7 @@
 {
   "name": "javascript-refactoring-exercise",
   "version": "1.0.0",
-  "description": "",
+  "description": "Its time to put those modern JavaScript skills into practice 🙌",
   "main": "index.js",
   "scripts": {
     "test": "jest"
