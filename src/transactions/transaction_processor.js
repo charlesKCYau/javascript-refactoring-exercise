@@ -2,7 +2,7 @@
 
 const processTransactions = (transActions) => {
 
-    txr = [];
+    const txr = [];
 
     if(!validateTransactions(transActions)) {
         throw new Error("Undefined collection of transactions")
