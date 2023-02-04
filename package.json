@@ -19,5 +19,8 @@
   "homepage": "https://github.com/techreturners/javascript-refactoring-exercise#readme",
   "devDependencies": {
     "jest": "^27.2.4"
+  },
+  "dependencies": {
+    "jes": "^0.6.1"
   }
 }

@@ -16,7 +16,7 @@ const processTransactions = (transActions) => {
     //     const transaction = transActions[i];
     //     txCount[transaction] ? txCount[transaction] += 1 : txCount[transaction] = 1;
     // }
-    let txCount = transActions.reduce((cnt, cur) => (cnt[cur] = cnt[cur] + 1 || 1, cnt), {});
+    let txCount = transActions.reduce((count, item) => (count[item] = count[item] + 1 || 1, count), {});
     // console.log(txCount);
     txCount = sortByAmountThenName(txCount);
     
@@ -42,10 +42,10 @@ function sortByAmountThenName(txCount) {
     // }
 
     // return sortedResults;
-    keysSorted = Object.entries(txCount).sort((a,b)=>{return b[1] - a[1] || a > b || -(a < b)})
+    const txSorted = Object.entries(txCount).sort((item1,item2)=>{return item2[1] - item1[1] || item1 > item2 || -(item1 < item2)})
     // console.log(keysSorted);    
 
-    return keysSorted;
+    return txSorted;
 }
 
 
